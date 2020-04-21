@@ -40,7 +40,7 @@ describe(`These are tests cases for login functionality`, async function () {
         let getInvPassword = await invalidPassword(driver, By, until) 
             expect(getInvPassword).to.be.true;       
     });
-    it.only(`logIn with Invalid Credentials`, async function () {
+    it(`logIn with Invalid Credentials`, async function () {
         let getInvalidCredentials = await invalidCredentials(driver, By, until);
         expect(getInvalidCredentials).to.be.true;
     }); 
